@@ -89,7 +89,6 @@ class ComPeopleControllerSession extends ComBaseControllerResource
     	$this->_state->setItem($person);
     	if ( isset($_SESSION['return']) ) {
 		$validatedSessionID = htmlspecialchars(strip_tags(trim($_SESSION['return'])));
-		$validatedSessionID
     	    $this->_state->append(array('return'=>$validatedSessionID));
     	}
     	return $person;
